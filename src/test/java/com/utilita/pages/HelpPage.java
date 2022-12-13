@@ -12,7 +12,8 @@ public class HelpPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[.='Help']")
+
+    @FindBy(linkText = "Help")
     public WebElement helpButton;
 
     @FindBy(xpath = "//a[contains(text(),'Reference')]")

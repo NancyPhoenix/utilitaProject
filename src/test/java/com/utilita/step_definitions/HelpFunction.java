@@ -29,7 +29,7 @@ public class HelpFunction {
     @Then("Help screen will load")
     public void help_screen_will_load() {
 
-       Assert.assertTrue(helpPage.custRefNum.isDisplayed());
+        Assert.assertTrue(helpPage.custRefNum.isDisplayed());
 
     }
 
@@ -55,11 +55,12 @@ public class HelpFunction {
 
     }
 
-    @Then("error message -Please provide your email-phone number and postcode- will show")
-    public void error_message_please_provide_your_email_phone_number_and_postcode_will_show() {
-
+    @Then("error message {string} will show")
+    public void errorMessageWillShow(String errorMessage) {
         Assert.assertTrue(helpPage.errorMessage.isDisplayed());
     }
 
-
 }
+
+
+
